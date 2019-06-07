@@ -1,0 +1,53 @@
+body {
+    padding-top: 56px;
+}
+
+.bh-bg {
+    background-color: #DEFFE1;
+    padding-bottom: 50px;
+}
+
+.bgimage {
+    background-image: url("../img/home-logo.jpg"); /* The image used */
+    background-color: forestgreen; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-bottom: 5px solid green;
+}
+
+.bhtext {
+    position: absolute;
+    bottom: 100px;
+}
+
+i.bh-iconhov:hover {
+    transform: scale(1.1);
+}
+
+a.bh-hover {
+    text-decoration: none;
+    color: black;
+}
+
+h3.bh-servise {
+    text-align: center;
+    border-bottom: 5px solid seagreen;
+    border-radius: 0px 0px 40px 40px;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none; /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    color: darkgrey;
+}
+
+li a:hover {
+    text-decoration: none;
+}
