@@ -15,6 +15,10 @@
 
     <link href="<?= base_url('assets/'); ?>vendor/fontawesome/css/all.css" rel="stylesheet">
 
+    <!-- custom styles -->
+    <link href="<?= base_url('assets/'); ?>css/ui.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url('assets/'); ?>css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)">
+
     <link href="<?= base_url('assets/'); ?>css/style.css" rel="stylesheet">
 
 </head>

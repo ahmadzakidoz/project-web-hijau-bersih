@@ -172,9 +172,10 @@
 
 
     <div class="container">
+        <?= $this->session->flashdata('pesan'); ?>
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <form id="regForm" method="post" action="<?= base_url('jual/submit_jual'); ?>">
+                <form id="regForm" method="post" action="<?= base_url('jual/tambah'); ?>">
                     <!-- One "tab" for each step in the form: -->
                     <div class="tab">
                         <h3 class="text-center my-3">FORM JUAL SAMPAH</h3>
@@ -220,8 +221,9 @@
                             <div class="col-4">
                                 Nama
                             </div>
-                            <div class="col-4">
-                                : <span id="dispnama"></span>
+                            <div class="col-1">:</div>
+                            <div class="col-5">
+                                <span id="dispnama"></span>
                             </div>
                         </div>
                         <div class="row">
@@ -229,8 +231,9 @@
                             <div class="col-4">
                                 No. Telp/HP
                             </div>
-                            <div class="col-4">
-                                : <span id="disptelp"></span>
+                            <div class="col-1">:</div>
+                            <div class="col-5">
+                                <span id="disptelp"></span>
                             </div>
                         </div>
                         <div class="row">
@@ -238,8 +241,9 @@
                             <div class="col-4">
                                 Email
                             </div>
-                            <div class="col-4">
-                                : <span id="dispemail"></span>
+                            <div class="col-1">:</div>
+                            <div class="col-5">
+                                <span id="dispemail"></span>
                             </div>
                         </div>
                         <div class="row">
@@ -247,8 +251,9 @@
                             <div class="col-4">
                                 Alamat
                             </div>
-                            <div class="col-4">
-                                : <span id="dispalamat"></span>, <span id="dispkelurahan"></span>, <span id="dispkecamatan"></span>
+                            <div class="col-1">:</div>
+                            <div class="col-5">
+                                <span id="dispalamat"></span>, <span id="dispkelurahan"></span>, <span id="dispkecamatan"></span>
                             </div>
                         </div>
                         <div class="row">
@@ -256,8 +261,9 @@
                             <div class="col-4">
                                 Tanggal
                             </div>
-                            <div class="col-4">
-                                : <span id="disptanggal"></span>
+                            <div class="col-1">:</div>
+                            <div class="col-5">
+                                <span id="disptanggal"></span>
                             </div>
                         </div>
                     </div>
