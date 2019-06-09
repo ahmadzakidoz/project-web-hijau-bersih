@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-4 my-5">
                     <a href="<?= base_url('jual'); ?>" class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-success bh-iconhov"></i>
                         <i class="fas fa-trash fa-stack-1x fa-inverse bh-iconhov"></i>
@@ -26,16 +26,16 @@
                         <h4>Jual Sampah</h4>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="<?= base_url('hijau'); ?>" class="fa-stack fa-4x">
+                <div class="col-md-4 my-5">
+                    <a href="<?= base_url('timhijau'); ?>" class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-success bh-iconhov"></i>
                         <i class="fas fa-seedling fa-stack-1x fa-inverse bh-iconhov"></i>
                     </a>
-                    <a href="<?= base_url('hijau'); ?>" class="bh-hover">
+                    <a href="<?= base_url('timhijau'); ?>" class="bh-hover">
                         <h4>Tim Hijau</h4>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 my-5">
                     <a href="<?= base_url('produk'); ?>" class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-success bh-iconhov"></i>
                         <i class="fas fa-shopping-cart fa-stack-1x fa-inverse bh-iconhov"></i>
