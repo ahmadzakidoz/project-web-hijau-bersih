@@ -47,6 +47,18 @@
             <?php if ($this->uri->segment(2) == "request") {
                 echo 'active';
             } ?>" href="<?= base_url('admin/request'); ?>"><i class="app-menu__icon fa fa-trash"></i><span class="app-menu__label">Request Jual</span></a></li>
+            <li><a class="app-menu__item 
+            <?php if ($this->uri->segment(2) == "timhijau") {
+                echo 'active';
+            } ?>" href="<?= base_url('admin/timhijau'); ?>"><i class="app-menu__icon fa fa-leaf"></i><span class="app-menu__label">Tim Hijau</span></a></li>
+            <li><a class="app-menu__item 
+            <?php if ($this->uri->segment(2) == "produk") {
+                echo 'active';
+            } ?>" href="<?= base_url('admin/produk'); ?>"><i class="app-menu__icon fa fa-shopping-cart"></i><span class="app-menu__label">Produk</span></a></li>
+            <li><a class="app-menu__item 
+            <?php if ($this->uri->segment(2) == "event") {
+                echo 'active';
+            } ?>" href="<?= base_url('admin/event'); ?>"><i class="app-menu__icon fa fa-calendar"></i><span class="app-menu__label">Event</span></a></li>
             <li><a class="app-menu__item" href="<?= base_url('admin/logout'); ?>"><i class="app-menu__icon fa fa-sign-out"></i><span class="app-menu__label">Logout</span></a></li>
         </ul>
     </aside>
