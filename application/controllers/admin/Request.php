@@ -26,4 +26,30 @@ class Request extends CI_Controller
         $this->load->view('admin/request', $data);
         $this->load->view('template/admin_footer');
     }
+
+    public function edit_request()
+    {
+        $data = [
+            'nama' => $this->input->post('nama'),
+            'telp' => $this->input->post('telp'),
+            'email' => $this->input->post('email'),
+            'alamat' => $this->input->post('alamat'),
+            'tanggal' => $this->input->post('tanggal'),
+            'status' => $this->input->post('status')
+        ];
+
+        $this->db->where('id', $this->input->post('id'));
+        $this->db->update('jual', $data);
+        $this->session->set_flashdata('pesan', '<div class="alert alert-dismissible alert-success" role="alert"><button class="close" type="button" data-dismiss="alert">×</button>Request berhasil diedit!</div>');
+        redirect('admin/request');
+    }
+
+    public function hapus_request()
+    {
+        $id = $this->uri->segment(4);
+        $this->db->where('id', $id);
+        $this->db->delete('jual');
+        $this->session->set_flashdata('pesan', '<div class="alert alert-dismissible alert-success" role="alert"><button class="close" type="button" data-dismiss="alert">×</button>Request dihapus!</div>');
+        redirect('admin/request');
+    }
 }

@@ -141,7 +141,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="submit" name="save" class="btn btn-primary">Tambah</button>
+                    <button type="submit" name="save" class="btn btn-primary">Simpan</button>
                 </div>
                 </form>
             </div>
